@@ -16,6 +16,7 @@ import javax.swing.SwingConstants;
  * 3个空行：基本模块相互之间各不搭边
  * 2个空行：程序一个模块的子小功能
  * 1个空行：又并列情况
+ *我来测试一下可不可以用了。
  * */
 
 public class runing {
