@@ -9,7 +9,7 @@ package p03;
  * 计数操作是，每次碰到雷，我对周围一圈数值+1.---这样到时候翻开的时候直接把数值打印上去就好。---非常妙。
  * */
 public class tool {
-	static int STATE=-1;//-1：游戏结束。-2：回到选择界面。-3：退出程序。0：游戏界面。1：游戏说明界面
+	static int STATE=-1;//-1：游戏结束。-2：回到选择界面。-3：退出程序。0：游戏界面。1：游戏说明界面 
 	static int LEVEL=-1;//(设置初始) 1:初级 2：中级 3：高级 10：游戏说明
 	static int MAP_W=9;
 	static int MAP_H=9;
