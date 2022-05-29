@@ -2,9 +2,6 @@ package p03;
 /*
  * 比如小变量level等都可以直接用静态来表示了。
  * */
-import java.awt.BorderLayout;
-import java.awt.Color;
-import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -12,34 +9,14 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseMotionAdapter;
 import javax.swing.JLabel;
-import javax.swing.ImageIcon;
 import java.awt.Font;
 import javax.swing.SwingConstants;
 
 public class GameSelect extends JFrame {
 
 	private JPanel contentPane;
-	static int level=-1,state=-1,xx=-1,yy=-1,row=-1,col=-1,count=-1;
-	public static void main(String[] args) {
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				try {
-					GameSelect frame = new GameSelect();
-					frame.setVisible(true);
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-			}
-		});
-	}
 
-	/**
-	 * Create the frame.
-	 */
 	public GameSelect() {
 
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -88,7 +65,7 @@ public class GameSelect extends JFrame {
 				tool.STATE=0;
 			}
 		});
-		JButton btn4 = new JButton("游戏说明");
+		JButton btn4 = new JButton("拓展功能");
 		btn4.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				tool.LEVEL=10;
@@ -122,7 +99,6 @@ public class GameSelect extends JFrame {
 			tool.F_HEIGHT=4*tool.BORDER+tool.MAP_H*tool.IN_LEN+60;
 			tool.HOUR=0;tool.MINUTE=0;tool.SECOND=0;
 		}else if(tool.LEVEL==3) {
-			level=1;
 			tool.BOOM=99;
 			tool.MAP_H=16;
 			tool.MAP_W=30;
