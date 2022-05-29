@@ -13,6 +13,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
+import javax.swing.JLabel;
 
 public class Explain extends JFrame {
 
@@ -47,17 +48,6 @@ public class Explain extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JTextArea txt1 = new JTextArea();
-		txt1.setEditable(false);
-		txt1.setText("\t游戏说明：\n\n"
-				+ " 1.游戏核心目标：根据提示猜到谜语，即可通关。\n"
-				+ " 2.点击头像，输入答案！\n"
-				+ " 3.通过打开土地寻找谜语提示\n"
-				+ " 4.请在最短的时间猜出这个谜语吧\n"
-				+ " 5.注意：不要踩到地雷哦！");
-		txt1.setBounds(10, 10, 294, 190);
-		contentPane.add(txt1);
-		
 		JButton btn1 = new JButton("<<返回");
 
 		btn1.addActionListener(new ActionListener() {
@@ -65,8 +55,16 @@ public class Explain extends JFrame {
 				tool.STATE=-2;
 			}
 		});
-		btn1.setBounds(214, 205, 80, 23);
+		btn1.setBounds(211, 195, 80, 23);
 		contentPane.add(btn1);
+		
+		JButton btn1_1 = new JButton("自定义游戏");
+		btn1_1.setBounds(23, 58, 118, 98);
+		contentPane.add(btn1_1);
+		
+		JButton btn1_1_1 = new JButton("猜谜语游戏");
+		btn1_1_1.setBounds(173, 58, 118, 98);
+		contentPane.add(btn1_1_1);
 		
 
 	}
