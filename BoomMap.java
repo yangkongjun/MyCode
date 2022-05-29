@@ -4,7 +4,7 @@ package p03;
  * 用于地图上炸弹生成的类
  * */
 
-public class map {
+public class BoomMap {
 	int[] mpx=new int[tool.BOOM];
 	int[] mpy=new int[tool.BOOM];
 	
