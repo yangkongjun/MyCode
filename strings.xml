@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">我的应用</string>
+
+    <string name="link_Internet">
+        <a href="http://www.baidu.com">点我进入百度首页！</a>
+    </string>
+    <string name="link_schedule">
+        <a href="https://docs.qq.com/sheet/DTVNVYlRMTmpFYmNm?tab=BB08J2&amp;u=b17affabd717404fa504d32a4dd2a718">点我进入时间表！</a>
+    </string>
+</resources>
