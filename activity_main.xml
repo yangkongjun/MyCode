@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+</TabHost>
+
+<!--
+文献参考
+开发者文档：https://developer.android.google.cn/
+我的使用文档：
+安装到手机：https://blog.csdn.net/deniro_li/article/details/80372120
+添加链接功能：https://blog.csdn.net/JMW1407/article/details/120024543
+
+想做的功能
+1.修改软件图标。
+2.实现那个叫啥 5*5的注意力游戏。
+
+
+
+
+-->
